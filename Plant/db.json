@@ -235,6 +235,13 @@
       "lname": "Hota",
       "email": "subu@gmail.com",
       "password": "12"
+    },
+    {
+      "id": "99fb",
+      "fname": "Manas",
+      "lname": "Ghosh",
+      "email": "manas@gmail.com",
+      "password": "12345"
     }
   ]
 }

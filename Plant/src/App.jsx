@@ -5,7 +5,7 @@ import { AuthoProvider } from "./Components/AuthoContext";
 function App() {
   return (
     <AuthoProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/BPlant">
         <AllRoutes />
       </BrowserRouter>
     </AuthoProvider>

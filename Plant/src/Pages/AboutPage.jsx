@@ -5,10 +5,10 @@ import { useState } from 'react';
 import './AboutPage.css';
 
 const AboutPage = () => {
-    
+
     const [isEditing, setIsEditing] = useState(false);
-    
-   
+
+
     const [formData, setFormData] = useState({
         name: "Manas Ghosh",
         email: "manasghosh@gmail.com",
@@ -31,10 +31,10 @@ const AboutPage = () => {
         setIsEditing(!isEditing);
     };
 
-    
+
     const handleSaveClick = () => {
         setIsEditing(false);
-        
+
     };
 
     return (
