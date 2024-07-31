@@ -7,32 +7,43 @@ import { useContext, useState } from "react";
 
 const LoginPage = () => {
   const { setIsLogin } = useContext(AuthoContext);
-  const [email,setEmail]=useState("");
-  const [password,setPassword]=useState("");
-  const [error, setError] = useState("")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
-
   async function loginCall() {
-    if (email === " " || password === "") {
-        setError("All Field Requierd !")
+    const trimmedEmail = email.trim();
+    const trimmedPassword = password.trim();
+    
+    if (trimmedEmail === "" || trimmedPassword === "") {
+      setError("All fields required!");
     } else {
-        setError("")
-        let res = await fetch("http://localhost:3000/user");
-        let data = await res.json();
-        let user = data.some((users) => users.email === email && users.password === password)
-        if (user) {
-            alert("login succesful")
-            setIsLogin(true);
-            navigate('/')
-        } else {
-            setError("invalid crediential !")
+      setError("");
+      try {
+        let res = await fetch("https://manasghosh7681.github.io/api/db.json");
+        if (!res.ok) {
+          throw new Error("Network response was not ok");
         }
+        let data = await res.json();
+        let user = data.user.some((user) => user.email === trimmedEmail && user.password === trimmedPassword);
+        if (user) {
+          alert("Login successful");
+          setIsLogin(true);
+          navigate('/');
+        } else {
+          setError("Invalid credentials!");
+        }
+      } catch (error) {
+        setError("Error fetching user data");
+      }
     }
-}
-function signup(){
-  navigate('/signup')
-}
+  }
+
+  function signup() {
+    navigate('/signup');
+  }
+
   return (
     <>
       <div className="loginPage">
@@ -46,13 +57,21 @@ function signup(){
           </div>
           <div className="form">
             <div className="align">
-            <div className="error">{error}</div>
+              <div className="error">{error}</div>
               <h4>Login</h4>
               <label>Welcome back!!!</label>
               <label className='text'>Email</label>
-              <input type="email" placeholder="abc@gmail.com" onChange={(ev)=>{setEmail(ev.target.value)}} />
+              <input
+                type="email"
+                placeholder="abc@gmail.com"
+                onChange={(ev) => setEmail(ev.target.value)}
+              />
               <label className='text'>Password</label>
-              <input type="password" placeholder=".............." onChange={(ev)=>{setPassword(ev.target.value)}}  />
+              <input
+                type="password"
+                placeholder=".............."
+                onChange={(ev) => setPassword(ev.target.value)}
+              />
               <div className="login-btn">
                 <button onClick={loginCall}>Login</button>
               </div>

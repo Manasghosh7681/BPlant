@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 17d7c4a86dca4380597e0f2ede7448608764ed24
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios'; // Import Axios
