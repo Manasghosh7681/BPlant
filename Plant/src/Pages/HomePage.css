@@ -1,0 +1,265 @@
+.home {
+    background-color: rgba(164, 134, 192, 0.289);
+}
+
+.home h1 {
+    padding: 15px 0 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    height: 400px;
+    background-color: rgb(220, 220, 193);
+}
+
+.heading {
+    height: 80px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heading h1 {
+    margin-top: 150px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flower {
+
+    height: 300px;
+    width: 500px;
+    display: flex;
+    margin-top: 120px;
+    gap: 20px;
+
+
+}
+
+.flower2 {
+    height: 220px;
+    width: 200px;
+
+}
+
+.flower2 img {
+    height: 220px;
+    width: 200px;
+}
+
+.flower1 {
+    height: 220px;
+    width: 100px;
+    /* border: 1px sold red; */
+
+}
+
+.flower1 img {
+    height: 220px;
+    width: 150px;
+
+}
+
+.product {
+    height: 700px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+}
+
+.tree {.product {
+    position: relative;
+    padding-bottom: 60px; 
+}
+
+.pagination {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; 
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.pagination button {
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+    margin: 50px 20px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    height: 120px;
+    width: auto;
+    border: 1px dashed pink;
+    cursor: pointer;
+}
+
+.grid img {
+    height: 120px;
+    width: 100px;
+}
+
+.grid button {
+    width: 50px;
+    border: none;
+    border: 2px solid black;
+    font-size: 40px;
+    border-radius: 50px;
+}
+
+.inner {
+
+    display: flex;
+    gap: 5%;
+}
+.pagination button{
+    border:none;
+}
+
+/* Media Queries for devices with a maximum width of 768px (tablets and smaller screens) */
+@media (max-width: 768px) {
+    .home {
+        padding: 0 10px;
+    }
+
+    .home h1 {
+        font-size: 20px;
+    }
+
+    .body {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .heading {
+        width: 100%;
+        height: auto;
+    }
+
+    .heading h1 {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+
+    .flower {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .flower1,
+    .flower2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .flower1 img,
+    .flower2 img {
+        width: 30%;
+        height: 100px;
+    }
+
+    .product {
+        height: auto;
+        padding: 20px;
+    }
+
+    .tree {
+        margin: 20px;
+    }
+
+    .pagination {
+        position: static;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        height: auto;
+    }
+
+    .grid img {
+        height: 100px;
+        width: auto;
+    }
+
+    .inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Media Queries for devices with a maximum width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 18px;
+    }
+
+    .heading h1 {
+        font-size: 18px;
+    }
+
+    .flower {
+        margin-top: 30px;
+    }
+
+    .flower1 img,
+    .flower2 img {
+        width: 30%;
+        height: 100px;
+    }
+
+    .product {
+        padding: 10px;
+    }
+
+    .tree {
+        margin: 10px;
+    }
+
+    .grid {
+         flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        height: auto;
+    }
+
+    .grid img {
+        height: 80px;
+    }
+
+    .pagination {
+        position: static;
+        padding: 8px;
+    }
+}
+
+
+
+
+
+
+
+

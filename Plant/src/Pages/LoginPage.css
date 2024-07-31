@@ -1,0 +1,159 @@
+
+.loginPage
+{
+    height: 100vh;
+    background-color: rgba(164, 134, 192, 0.289);
+}
+h1{
+    background-color: rgba(164, 134, 192, 0.289);
+    height: 50px;
+}
+.frame{
+    display: flex;
+    background-color: white;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.picture{
+    height: 400px;
+    width: 350px;
+    background-color: rgba(164, 134, 192, 0.289);
+    border: 2px solid pink;
+}
+.picture img{
+    height: 400px;
+}
+.form
+{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    border: 2px solid pink;
+
+}
+.text{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 20px;
+}
+.align input{
+    width: 250px;
+    height: 25px;
+    font-weight: 100;
+
+}
+.login-btn button{
+    height: 25px;
+    width: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.login-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+.form p button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: rgb(95, 110, 110);
+}
+p{
+    font-size: 13px;
+}
+p button{
+    font-size: 10px;
+    
+}
+.error{
+    font-size: 13px;
+    color: red;
+}
+.sign-form 
+{
+    margin-top: 100px;
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 700px;
+    width: 100%;
+    align-items: center;
+}
+.sign-form input{
+    border: none;
+    border-bottom: 1px solid #202124;
+    height: 30px;
+    width: 300px;
+}
+input:focus{
+    outline: none;
+}
+.sugnbtn button{
+    margin-top: 30px;
+    height: 30px;
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    background-color:#202124;
+    color: #ffffff;
+    cursor: pointer;
+}
+.signup-btn
+{
+    display: flex;
+    font: 14px "National 2-Medium";
+    font-weight: 500;
+}
+.signup-btn button{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.375);
+    background-color: white;
+    cursor: pointer;
+    
+}
+.Account{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font: italic;
+    font-weight: 700px;
+    font-size: 30px;
+    color: #219634;
+    
+}
+.error{
+    color: red;
+}
+@media screen and (min-width:321px) and (max-width:720px){
+    .loginform{
+        height: 600px;
+    }
+    .form input{
+        width: 250px;
+       }
+
+}
+@media screen and (max-width:320px) {
+   .loginform{
+    height: 530px;
+   }
+   .form input{
+    width: 200px;
+   }
+   .Account{
+    font-size: 20px;
+   }
+    
+}

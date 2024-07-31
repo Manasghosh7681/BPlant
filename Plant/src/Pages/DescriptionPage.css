@@ -1,0 +1,192 @@
+
+.desc-body
+{
+    height: 100vh;
+    background-color: none;
+    display: flex;
+    
+}
+.containt
+{
+    width: 60%;
+    margin-left: 60px;
+}
+.image
+{
+    width: 40%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+.image img{
+    height: 300px;
+    width: 300px;
+    margin-left:20px ;
+}
+h1{
+    margin: 0px;
+}
+.Name{
+    font-size: 25px;
+    font-weight: 600;
+}
+.sub-title{
+    margin: 13px 0 0 0;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.title{
+    margin: 30px 0  0;
+    padding: 0 0 10px 0;
+    font-size: 25px;
+    font-weight: 600;
+    width: 500px;
+    border-bottom: 2px solid black;
+}
+.water {
+    width: 500px;
+    height: 60px;
+     display: flex ;
+     align-items: center;
+     border-bottom: 2px solid black;
+}
+ p{
+    margin-right:50px;
+}
+.Tips{
+    width: 500px;
+    height: 80px;   
+    display: flex;
+    align-items: center;
+}
+.desc h2{
+    width: 500px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.sub-desc{
+    margin-top: 1cm;
+}
+/* Media Queries for devices with a maximum width of 768px (tablets and smaller screens) */
+@media (max-width: 768px) {
+    .desc-body {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto;
+    }
+
+    .containt {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .image img {
+        height: 200px;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .Name {
+        font-size: 20px;
+    }
+
+    .sub-title {
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .water,
+    .Tips {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    p {
+        margin-right: 20px;
+    }
+
+    .desc h2 {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .sub-desc {
+        margin-top: 20px;
+    }
+}
+
+/* Media Queries for devices with a maximum width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    .desc-body {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        height: auto;
+    }
+
+    .containt {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .image img {
+        height: 150px;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .Name {
+        font-size: 18px;
+    }
+
+    .sub-title {
+        font-size: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .water,
+    .Tips {
+        width: 100%;
+        font-size: 12px;
+        padding: 5px 0;
+    }
+
+    p {
+        margin-right: 10px;
+    }
+
+    .desc h2 {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .sub-desc {
+        margin-top: 10px;
+    }
+}
